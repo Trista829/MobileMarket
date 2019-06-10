@@ -1,0 +1,52 @@
+/*======== reset css ========*/
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	tap-highlight-color: transparent;
+	-webkit-tap-highlight-color: transparent;
+}
+body {
+	font-size: 14px;
+	font-family: "微软雅黑", sans-serif;
+	color: #333;
+}
+ul, ol {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #333;
+}
+input, textarea {
+	border: none;
+	outline: none;
+	resize: none;
+	/*清除元素外观*/
+	-webkit-appearance: none;
+}
+input::-webkit-input-placeholder {
+	color: #ccc;
+}
+/*======== common css ========*/
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.clearfix::before, .clearfix::after {
+	content: "";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+	clear: both;
+}
+/*使用精灵图的公用样式*/
+/*[class^="icon_"], [class*=" icon_"] {
+	background-repeat: no-repeat;
+	background-image: url();
+	background-size: 200px 200px;
+}*/
